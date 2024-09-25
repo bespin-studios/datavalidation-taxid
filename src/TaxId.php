@@ -48,7 +48,7 @@ class TaxId
     /**
      * @throws Exception
      */
-    public static function format(string $taxId, Country $country = null, Format $format = Format::machine, bool $isAlreadyMachineFormat = false): string
+    public static function format(string $taxId, ?Country $country = null, Format $format = Format::machine, bool $isAlreadyMachineFormat = false): string
     {
         if ($format === Format::machine) {
             if ($isAlreadyMachineFormat) {
