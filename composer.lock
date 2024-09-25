@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "bespin/datavalidation-shared",
-            "version": "v1.0.1",
+            "version": "v1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bespin-studios/datavalidation-shared.git",
-                "reference": "b31efb67f14c302e06ebae8732b079f869eb53d5"
+                "reference": "eb84ce7c2724a650e38bf6b090e5cf4f5503aaf3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bespin-studios/datavalidation-shared/zipball/b31efb67f14c302e06ebae8732b079f869eb53d5",
-                "reference": "b31efb67f14c302e06ebae8732b079f869eb53d5",
+                "url": "https://api.github.com/repos/bespin-studios/datavalidation-shared/zipball/eb84ce7c2724a650e38bf6b090e5cf4f5503aaf3",
+                "reference": "eb84ce7c2724a650e38bf6b090e5cf4f5503aaf3",
                 "shasum": ""
             },
             "require-dev": {
@@ -42,9 +42,9 @@
             "description": "Shared components for bespin/datavalidation packages",
             "support": {
                 "issues": "https://github.com/bespin-studios/datavalidation-shared/issues",
-                "source": "https://github.com/bespin-studios/datavalidation-shared/tree/v1.0.1"
+                "source": "https://github.com/bespin-studios/datavalidation-shared/tree/v1.1.0"
             },
-            "time": "2024-09-25T08:16:08+00:00"
+            "time": "2024-09-25T13:10:30+00:00"
         }
     ],
     "packages-dev": [

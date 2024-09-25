@@ -2,6 +2,8 @@
 
 namespace Bespin\DataValidation;
 
+use Exception;
+
 class TaxId
 {
     public static function verify(string $taxId, Country $country): bool
@@ -36,6 +38,27 @@ class TaxId
 
         // e) Verify checksum using the Mod 11,10 algorithm
         return self::verifyChecksum($digits, $checksumDigit);
+    }
+
+    /**
+     * @throws Exception
+     */
+    public static function format(string $taxId, Country $country, Format $format = Format::machine, bool $isAlreadyMachineFormat = false): string {
+        if ($format === Format::machine) {
+            if ($isAlreadyMachineFormat) {
+                return $taxId;
+            }
+            $taxId = preg_replace('/[^0-9]/', '', $taxId);
+            if ($taxId === null) {
+                throw new Exception('failed to format taxId');
+            }
+            return $taxId;
+        } else {
+            if ($isAlreadyMachineFormat) {
+                return ltrim(wordwrap(' '.$taxId, 3, ' ', true));
+            }
+            return ltrim(wordwrap(' '.self::format($taxId), 3, ' ', true));
+        }
     }
 
     /**
