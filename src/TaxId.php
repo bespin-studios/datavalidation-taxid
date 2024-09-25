@@ -3,12 +3,17 @@
 namespace Bespin\DataValidation;
 
 use Exception;
+use Throwable;
 
 class TaxId
 {
     public static function verify(string $taxId, Country $country): bool
     {
-        $digits = mb_str_split($taxId);
+        try {
+            $digits = mb_str_split(self::format($taxId, $country));
+        } catch (Throwable) {
+            return false;
+        }
         // check the length of the tax id
         if (count($digits) !== 11) {
             return false;
@@ -43,7 +48,8 @@ class TaxId
     /**
      * @throws Exception
      */
-    public static function format(string $taxId, Country $country, Format $format = Format::machine, bool $isAlreadyMachineFormat = false): string {
+    public static function format(string $taxId, Country $country = null, Format $format = Format::machine, bool $isAlreadyMachineFormat = false): string
+    {
         if ($format === Format::machine) {
             if ($isAlreadyMachineFormat) {
                 return $taxId;
@@ -54,6 +60,9 @@ class TaxId
             }
             return $taxId;
         } else {
+            if ($country === null) {
+                throw new Exception('failed to format taxId, human readable format requires a country');
+            }
             if ($isAlreadyMachineFormat) {
                 return ltrim(wordwrap(' '.$taxId, 3, ' ', true));
             }
