@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/bespin-studios/datavalidation-taxid/compare/v1.1.0...v1.1.1) (2024-09-25)
+
+
+### Bug Fixes
+
+* update description ([f87665f](https://github.com/bespin-studios/datavalidation-taxid/commit/f87665f947a7f3907dda31d139ae8147a93d4bc6))
+
 # [1.1.0](https://github.com/bespin-studios/datavalidation-taxid/compare/v1.0.0...v1.1.0) (2024-09-25)
 
 
