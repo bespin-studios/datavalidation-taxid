@@ -1,3 +1,10 @@
+## [1.3.1](https://github.com/bespin-studios/datavalidation-taxid/compare/v1.3.0...v1.3.1) (2024-09-25)
+
+
+### Bug Fixes
+
+* correctly type format method ([884184b](https://github.com/bespin-studios/datavalidation-taxid/commit/884184b388905950925033a70296db09fa12f7de))
+
 # [1.3.0](https://github.com/bespin-studios/datavalidation-taxid/compare/v1.2.0...v1.3.0) (2024-09-25)
 
 
