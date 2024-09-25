@@ -1,8 +1,8 @@
 {
-  "name": "bespin/taxid",
+  "name": "bespin/datavalidation-taxid",
   "description": "Library to verify german tax ids",
   "minimum-stability": "stable",
-  "license": "proprietary",
+  "license": "MPL-2.0",
   "authors": [
     {
       "name": "Lars Hennig",
@@ -16,13 +16,14 @@
   },
   "autoload": {
     "psr-4": {
-      "Bespin\\TaxId\\": "src"
+      "Bespin\\DataValidation\\": "src"
     }
   },
   "require-dev": {
     "phpstan/phpstan": "^1.11.4"
   },
   "require": {
-    "ext-mbstring": "*"
+    "ext-mbstring": "*",
+    "bespin/datavalidation-shared": "*"
   }
 }

@@ -4,8 +4,49 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4e7739c4975bd2c71b874ccfa2ffe239",
-    "packages": [],
+    "content-hash": "7ea61964dfcc44e21d613424804ffcf4",
+    "packages": [
+        {
+            "name": "bespin/datavalidation-shared",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bespin-studios/datavalidation-shared.git",
+                "reference": "b31efb67f14c302e06ebae8732b079f869eb53d5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bespin-studios/datavalidation-shared/zipball/b31efb67f14c302e06ebae8732b079f869eb53d5",
+                "reference": "b31efb67f14c302e06ebae8732b079f869eb53d5",
+                "shasum": ""
+            },
+            "require-dev": {
+                "phpstan/phpstan": "^1.11.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Bespin\\DataValidation\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Lars Hennig",
+                    "email": "lars@bespin-studios.com"
+                }
+            ],
+            "description": "Shared components for bespin/datavalidation packages",
+            "support": {
+                "issues": "https://github.com/bespin-studios/datavalidation-shared/issues",
+                "source": "https://github.com/bespin-studios/datavalidation-shared/tree/v1.0.1"
+            },
+            "time": "2024-09-25T08:16:08+00:00"
+        }
+    ],
     "packages-dev": [
         {
             "name": "phpstan/phpstan",
@@ -72,7 +113,6 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "ext-ctype": "*",
         "ext-mbstring": "*"
     },
     "platform-dev": [],

@@ -1,10 +1,10 @@
 <?php
 
-namespace Bespin\TaxId;
+namespace Bespin\DataValidation;
 
 class TaxId
 {
-    public static function verify(string $taxId): bool
+    public static function verify(string $taxId, Country $country): bool
     {
         $digits = mb_str_split($taxId);
         // check the length of the tax id
