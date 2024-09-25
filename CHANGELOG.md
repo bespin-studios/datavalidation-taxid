@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/bespin-studios/datavalidation-taxid/compare/v1.1.1...v1.2.0) (2024-09-25)
+
+
+### Features
+
+* add function to format the taxId ([0969bce](https://github.com/bespin-studios/datavalidation-taxid/commit/0969bcedc6d62500da26b5047221f261d52f8853))
+
 ## [1.1.1](https://github.com/bespin-studios/datavalidation-taxid/compare/v1.1.0...v1.1.1) (2024-09-25)
 
 
