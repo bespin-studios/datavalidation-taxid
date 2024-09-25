@@ -1,6 +1,6 @@
 {
   "name": "bespin/datavalidation-taxid",
-  "description": "Library to verify german tax ids",
+  "description": "Library to verify tax ids",
   "minimum-stability": "stable",
   "license": "MPL-2.0",
   "authors": [
