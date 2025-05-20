@@ -19,11 +19,11 @@
       "Bespin\\DataValidation\\": "src"
     }
   },
-  "require-dev": {
-    "phpstan/phpstan": "^1.11.4"
-  },
   "require": {
     "ext-mbstring": "*",
     "bespin/datavalidation-shared": "*"
+  },
+  "require-dev": {
+    "phpstan/phpstan": "^2"
   }
 }
