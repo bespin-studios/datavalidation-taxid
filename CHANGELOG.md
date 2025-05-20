@@ -1,3 +1,10 @@
+## [1.3.2](https://github.com/bespin-studios/datavalidation-taxid/compare/v1.3.1...v1.3.2) (2025-05-20)
+
+
+### Bug Fixes
+
+* pipeline ([e20a80c](https://github.com/bespin-studios/datavalidation-taxid/commit/e20a80c87932c73d1bef098b273be54c5c4c40e7))
+
 ## [1.3.1](https://github.com/bespin-studios/datavalidation-taxid/compare/v1.3.0...v1.3.1) (2024-09-25)
 
 
